@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Veríssimo | Destaque Profissional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+    .card-hover { transition: all 0.3s; }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+  <!-- HERO -->
+  <section class="hero-bg py-20 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="flex justify-center mb-6">
+        <div class="px-4 py-2 bg-emerald-500 text-white rounded-full text-sm font-semibold flex items-center gap-2">
+          <i class="fas fa-rocket"></i> ESTUDANTE DE ADS • PRONTO PARA O MERCADO
+        </div>
+      </div>
+      <h1 class="text-6xl font-bold mb-4">Olá, eu sou <span class="text-emerald-400">Rafael Veríssimo</span> 👋</h1>
+      <p class="text-2xl mb-8">Desenvolvedor Front-end Iniciante • 7 projetos reais entregues</p>
+      
+      <div class="flex justify-center gap-4 mb-10">
+        <a href="https://github.com/farrei" target="_blank" 
+           class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:bg-emerald-400 hover:text-white transition">
+          <i class="fab fa-github text-2xl"></i> Ver GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" 
+           class="border border-white px-8 py-4 rounded-2xl font-semibold flex items-center gap-3 hover:bg-white hover:text-white transition">
+          <i class="fab fa-linkedin text-2xl"></i> LinkedIn
+        </a>
+      </div>
+
+      <button onclick="simularMatch()" 
+              class="bg-gradient-to-r from-emerald-400 to-cyan-400 text-slate-900 font-bold text-xl px-12 py-6 rounded-3xl shadow-2xl hover:scale-110 transition flex items-center gap-4 mx-auto">
+        <i class="fas fa-magic"></i>
+        SIMULAR MATCH COM RECRUTADOR
+      </button>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold mb-8 text-center">Por que eu sou a escolha certa?</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
+        <i class="fas fa-code text-5xl text-emerald-400 mb-6"></i>
+        <h3 class="text-2xl font-semibold mb-3">7 Projetos Reais</h3>
+        <p class="text-slate-400">Desenvolvi jogos educativos, calculadoras úteis, portfólios e ferramentas de segurança digital.</p>
+      </div>
+      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
+        <i class="fas fa-graduation-cap text-5xl text-emerald-400 mb-6"></i>
+        <h3 class="text-2xl font-semibold mb-3">Cursando ADS</h3>
+        <p class="text-slate-400">Análise e Desenvolvimento de Sistemas – UNINTER. Aprendendo com prática diária.</p>
+      </div>
+      <div class="bg-slate-900 p-8 rounded-3xl card-hover">
+        <i class="fas fa-heart text-5xl text-emerald-400 mb-6"></i>
+        <h3 class="text-2xl font-semibold mb-3">Iniciativa + Criatividade</h3>
+        <p class="text-slate-400">Todos os projetos foram ideias minhas, do zero até o deploy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="bg-slate-900 py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-10 text-center">Meus Projetos (clique e teste!)</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <a href="https://github.com/farrei/guardioes-do-zap" target="_blank" class="block bg-slate-800 p-6 rounded-3xl card-hover">
+          <h3 class="font-semibold text-xl mb-2">🛡️ Guardiões do Zap</h3>
+          <p class="text-slate-400 text-sm">Jogo educativo contra golpes digitais</p>
+        </a>
+        <a href="https://github.com/farrei/rafael-verse" target="_blank" class="block bg-slate-800 p-6 rounded-3xl card-hover">
+          <h3 class="font-semibold text-xl mb-2">🌌 Rafael Verse</h3>
+          <p class="text-slate-400 text-sm">Portfólio imersivo com simulador de match</p>
+        </a>
+        <a href="https://github.com/farrei/aurora-lab" target="_blank" class="block bg-slate-800 p-6 rounded-3xl card-hover">
+          <h3 class="font-semibold text-xl mb-2">✨ Aurora Lab</h3>
+          <p class="text-slate-400 text-sm">Gerenciador de ideias com constelações</p>
+        </a>
+        <a href="https://github.com/farrei/fila-do-posto" target="_blank" class="block bg-slate-800 p-6 rounded-3xl card-hover">
+          <h3 class="font-semibold text-xl mb-2">⛽ Fila do Posto</h3>
+          <p class="text-slate-400 text-sm">Calculadora etanol x gasolina</p>
+        </a>
+      </div>
+      <p class="text-center mt-10 text-emerald-400 font-medium">+3 projetos completos no GitHub</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold mb-10 text-center">Habilidades que eu domino</h2>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <span class="px-6 py-3 bg-slate-800 rounded-3xl text-lg font-medium">HTML5</span>
+      <span class="px-6 py-3 bg-slate-800 rounded-3xl text-lg font-medium">CSS3</span>
+      <span class="px-6 py-3 bg-slate-800 rounded-3xl text-lg font-medium">JavaScript</span>
+      <span class="px-6 py-3 bg-slate-800 rounded-3xl text-lg font-medium">Tailwind CSS</span>
+      <span class="px-6 py-3 bg-slate-800 rounded-3xl text-lg font-medium">Git & GitHub</span>
+      <span class="px-6 py-3 bg-slate-800 rounded-3xl text-lg font-medium">Responsive Design</span>
+    </div>
+  </section>
+
+  <footer class="text-center py-12 border-t border-slate-800">
+    <p class="text-slate-400">Feito com ❤️ para chamar atenção dos recrutadores de TI</p>
+    <p class="mt-4">📍 São Paulo • Aberto para estágio / trainee / suporte técnico</p>
+    <p class="text-emerald-400 mt-6">farrei.github.io/destaque-curriculo-rafael</p>
+  </footer>
+
+  <script>
+    function simularMatch() {
+      const messages = [
+        "✅ Match! Recrutador de Suporte Técnico gostou dos seus projetos!",
+        "🔥 Empresa de educação digital quer te conhecer agora",
+        "🚀 Você foi selecionado para entrevista de Estágio em TI!"
+      ];
+      const random = messages[Math.floor(Math.random() * messages.length)];
+      alert(random + "\n\nRafael, você está pronto! Envie seu currículo hoje mesmo 💪");
+    }
+  </script>
+</body>
+</html>
